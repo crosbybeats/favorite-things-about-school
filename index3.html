@@ -17,6 +17,24 @@
 
   h1 {color:orange}
 
+  #square {
+width: 300px;
+height: 300px;
+background-color:rgb(183, 70, 70);
+margin: auto;
+
+position: relative;
+left: 1000px;
+rotate: -45deg;
+animation: rotate 3s infinite alternate ease-in-out, slide 1s forewards ease-in-out;
+  }
+
+  @keyframes rotate {
+    to{
+      rotate: 45deg;
+    }
+  }
+
                 
                 @keyframes move {
   0% {
@@ -39,25 +57,44 @@
   animation-duration: 3s;
   animation-iteration-count: infinite;
 }
-                
+    .font1{
+      font-family: "alkaline", sans-serif;
+font-weight: 400;
+font-style: normal;
+     }       
+     
+     .font1bold{
+      font-family: "alkaline", sans-serif;
+font-weight: 700;
+font-style: normal;
+     }
+
+     .font2{font-family: "grenadine-mvb", sans-serif;
+font-weight: 400;
+font-style: normal;}
+
+.font3{font-family: "matrix-ii", serif;
+font-weight: 400;
+font-style: normal;}
 
     </style>
+    <link rel="stylesheet" href="https://use.typekit.net/rst4hsc.css">
 </head>
 <body>
-    <h1>Classes</h1>
-    <p1><em>Lots of classes!</em> Everyday I go through our campus' many beautiful buildings to get to my classes that cover a wide range of topics. I have always really enjoyed the classes here and especially the wide range of options that the school offers. I think that it is super cool that I can go from my music class, to my web design class, and then to calculus, all in 1 day! </p1>
+    <h1 class="font1bold">Classes</h1>
+    <p1 class="font3"><em>Lots of classes!</em> Everyday I go through our campus' many beautiful buildings to get to my classes that cover a wide range of topics. I have always really enjoyed the classes here and especially the wide range of options that the school offers. I think that it is super cool that I can go from my music class, to my web design class, and then to calculus, all in 1 day! </p1>
     <br>
-    <h2>People</h2>
+    <h2 class="font1bold">People</h2>
     
     <br>
-    <p>Another one of my favorite aspects of EPS is the community that we have. All of the teachers and students are some of the friendliest people I have ever met, and they have formed a community that I really enjoy being a part of.</p>
+    <p class="font3">Another one of my favorite aspects of EPS is the community that we have. All of the teachers and students are some of the friendliest people I have ever met, and they have formed a community that I really enjoy being a part of.</p>
  
 <br>
 <p>My favorite classes:</p> <br>
 <button onclick="document.getElementById('skills').style.display='block'">Class list</button>
 <p id="skills" style="display:none; color:purple;">Music, Web, Graphic Design, and History</p>
 <br>
-<h>The Food!</h>
+<h class="font2">The Food!</h>
 
 <p>Here are some of the foods we had this past week that I enjoyed:</p>
 <table>
@@ -86,7 +123,7 @@
 <br>
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2688.100476257156!2d-122.20118688516426!3d47.64361429341485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906cc534674737%3A0xf92154cd626a9efb!2sEastside%20Preparatory%20School!5e0!3m2!1sen!2sus!4v1679937656589!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 <br>
-<p>A bar showing how much I like EPS:</p>
+<p class="font1bold">A bar showing how much I like EPS:</p>
 <br>
 <meter
   min="0"
@@ -101,6 +138,10 @@
 <br>
 <span class="border">Borders!</span>
 </div>
+<br>
+<img src="subie-logo.png" alt="subaru logo" style="width:250px;height:250px;">  
+<br>
+<div id="square"></div>
 
 </body>
 </html>
